@@ -12,14 +12,15 @@ void setup() {
   for (int i = 0; i < 4; i++) {
     pinMode(segmentPins[i], OUTPUT);
   }
-
-   pinMode(digitPins[0], OUTPUT);
+  //configuring selector pins
+  pinMode(digitPins[0], OUTPUT);
   pinMode(digitPins[1], OUTPUT);
-
+  pinMode(digitPins[2], OUTPUT);
+  
+  //setting selector pin initially low
   digitalWrite(digitPins[0], LOW);
   digitalWrite(digitPins[1], LOW);
-   pinMode(digitPins[2], OUTPUT);
-   digitalWrite(digitPins[2], LOW);
+  digitalWrite(digitPins[2], LOW);
 }
 
 
